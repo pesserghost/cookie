@@ -1,9 +1,12 @@
 from django.urls import path
 
+from django.urls import path
+
 from .views import *
+
 urlpatterns = [
-    path('', set_value_in_cookie),
-    path('get/', get_value_from_cookie),
-    path('update/', update_value_in_cookie),
-    path('delete/', delete),
+    path('add/', add_to_session),
+    path('get/', get_to_session),
+    path('delete/', delete_to_session),
+    path('update/', update_to_session),
 ]
